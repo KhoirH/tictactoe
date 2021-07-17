@@ -1,10 +1,11 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request
 
 viewpage = Blueprint('', __name__)
 
 @viewpage.route('/')
 def tictactoe_view():
-  return render_template('index.html')
+  data = request.args.get('is')
+  return render_template('index.html', data = data)
 
 @viewpage.route('/menu')
 def tictactoe_menu():

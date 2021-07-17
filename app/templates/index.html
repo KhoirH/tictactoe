@@ -37,7 +37,7 @@
     $(document).ready(function(){
       $('.wrapper-box').click(function() {
         if($(this).has('img.image').length === 0) {
-          $(this).append("<img alt='' class='image' src='{{ url_for('static', filename='assets/x.svg') }}'/>")
+          $(this).append("<img alt='' class='image' src='{{ url_for('static', filename='assets/'+ data + '.svg') }}'/>")
         }
       })
     })
