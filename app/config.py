@@ -18,6 +18,7 @@ class DevelopmentConfig(Config):
     # uncomment the line below to use postgres
     # SQLALCHEMY_DATABASE_URI = postgres_local_base
     DEBUG = True
+    SEND_FILE_MAX_AGE_DEFAULT=0
     SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'tb2_pkb_dbv2.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 

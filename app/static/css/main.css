@@ -1,0 +1,29 @@
+.wrapper-tictactoe {
+  width: 500px;
+  height: 500px;
+  background-color: #eee;
+}
+.wrapper-menu {
+  width: 400px;
+  height: 400px;
+}
+
+.wrapper-box {
+  width: calc(100%/3);
+  height: calc(500px/3);
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.image {
+  width: 50%;
+  height: 50%;
+}
+.image-click {
+  width: 50%;
+  height: 100%;
+
+}
